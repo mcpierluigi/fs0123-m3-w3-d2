@@ -29,7 +29,7 @@ const FetchArticles = () => {
     <Container>
       <Row>
         {allTheArticles.map(article => (
-          <Col key={article.id}>
+          <Col sm={6} key={article.id}>
             <SingleArticle article={article} />
           </Col>
         ))}

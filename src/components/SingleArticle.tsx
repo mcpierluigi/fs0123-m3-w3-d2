@@ -7,12 +7,14 @@ interface ArticleComponentProps {
 
 const SingleArticle = ({ article }: ArticleComponentProps) => {
   return (
-    <Card className="d-flex mb-2 text-dark">
+    <Card className="card mb-2 text-dark">
       <Card.Img className="card-img" variant="top" src={article.image_url} />
-      <Card.Body>
+      <Card.Body className="card-body">
         <Card.Title>{article.title}</Card.Title>
         <Card.Text>{article.summary}</Card.Text>
-        <Button variant="danger">Details</Button>
+        <Button className="btn" variant="danger">
+          Details
+        </Button>
       </Card.Body>
     </Card>
   );

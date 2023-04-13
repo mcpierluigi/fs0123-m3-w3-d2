@@ -1,0 +1,17 @@
+.card {
+  height: 99%;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.card-img {
+  height: 270px;
+  align-self: center;
+}
+
+.btn {
+  align-self: center;
+}
